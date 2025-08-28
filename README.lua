@@ -139,7 +139,7 @@ local function QLMOT_fake_script() -- ScreenGui.LocalScript
 					while item:IsDescendantOf(game.Workspace) and tpOn do
 						local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
 						travelTo(item)
-						if (item.Position - plr.Position).Magnitude < 45 then
+						if (item.Position - plr.Position).Magnitude < 95 then
 							maxItems()
 							fireproximityprompt(proxPrompt, 4)
 						end
