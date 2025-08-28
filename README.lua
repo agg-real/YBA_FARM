@@ -231,9 +231,9 @@ local function QLMOT_fake_script() -- ScreenGui.LocalScript
 	sellingButton.MouseButton1Click:Connect(function()
 		sell = not sell
 		if sell then
-			sellingButton.Text = "Toggle selling: on"
+			sellingButton.Text = "Toggle auto max items selling: on"
 		else
-			sellingButton.Text = "Toggle selling: off"
+			sellingButton.Text = "Toggle auto max items selling: off"
 		end
 		maxItems()
 	end)
@@ -242,10 +242,10 @@ local function QLMOT_fake_script() -- ScreenGui.LocalScript
 	tpButton.MouseButton1Click:Connect(function()
 		tpOn = not tpOn
 		if tpOn then
-			tpButton.Text = "Tp to items: on"
+			tpButton.Text = "Auto farm items: on"
 			coroutine.wrap(mainTP)()
 		else
-			tpButton.Text = "Tp to items: off"
+			tpButton.Text = "Auto farm items: off"
 		end
 		print("TP to items is now " .. tostring(tpOn))
 	end)
