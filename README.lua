@@ -121,7 +121,7 @@ local function QLMOT_fake_script() -- ScreenGui.LocalScript
 	
 		local length = vector.Magnitude
 	
-		local num_tp = math.ceil(length / 48)
+		local num_tp = math.ceil(length / 50)
 	
 		plr.CFrame = plr.CFrame + vector / num_tp
 	end
@@ -131,7 +131,7 @@ local function QLMOT_fake_script() -- ScreenGui.LocalScript
 part.Anchored = true
 part.Transparency= 0.85
 part.Size= Vector3.new(20,1,20)
-game.Debris:AddItem(part,1.5)
+game.Debris:AddItem(part,0.75)
 part.CFrame = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame * CFrame.new(0,-3.5,0) * CFrame.Angles(0,math.rad(0),0)
 	end
 
@@ -302,3 +302,4 @@ end)
 	end)
 end
 coroutine.wrap(QLMOT_fake_script)()
+
